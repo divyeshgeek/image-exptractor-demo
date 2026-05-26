@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "playwright install chromium --with-deps || playwright install chromium",
+    "prebuild": "playwright install chromium",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "playwright install chromium || true"
+    "postinstall": "playwright install chromium"
   },
   "dependencies": {
     "@crawlee/browser": "^3.16.0",
