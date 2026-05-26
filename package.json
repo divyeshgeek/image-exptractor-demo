@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "playwright install chromium",
+    "prebuild": "node scripts/install-playwright-browser.mjs",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H 0.0.0.0",
     "lint": "next lint",
-    "postinstall": "playwright install chromium"
+    "postinstall": "node scripts/install-playwright-browser.mjs"
   },
   "dependencies": {
     "@crawlee/browser": "^3.16.0",
